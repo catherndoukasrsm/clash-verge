@@ -184,7 +184,7 @@ async function resolveClash() {
 /**
  * only Windows
  * get the wintun.dll (not required)
- */
+
 async function resolveWintun() {
   const { platform } = process;
 
@@ -219,7 +219,7 @@ async function resolveWintun() {
 
   console.log(`[INFO]: resolve wintun.dll finished`);
 }
-
+*/
 /**
  * download the file to the resources dir
  */
@@ -304,7 +304,7 @@ const resolveGeoIP = () =>
 const tasks = [
   // { name: "clash", func: resolveClash, retry: 5 },
   { name: "clash-meta", func: () => resolveSidecar(clashMeta()), retry: 5 },
-  { name: "wintun", func: resolveWintun, retry: 5, winOnly: true },
+  // { name: "wintun", func: resolveWintun, retry: 5, winOnly: true },
   { name: "service", func: resolveService, retry: 5, winOnly: true },
   { name: "install", func: resolveInstall, retry: 5, winOnly: true },
   { name: "uninstall", func: resolveUninstall, retry: 5, winOnly: true },

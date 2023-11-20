@@ -6,7 +6,7 @@
 </h1>
 
 <h3 align="center">
-A REBORN Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">tauri</a>.
+A 接盘 Clash Meta GUI based on <a href="https://github.com/tauri-apps/tauri">tauri</a>.
 </h3>
 
 ## Features

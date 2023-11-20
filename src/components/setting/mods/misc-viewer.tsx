@@ -21,7 +21,7 @@ export const MiscViewer = forwardRef<DialogRef>((props, ref) => {
   const [values, setValues] = useState({
     appLogLevel: "info",
     autoCloseConnection: false,
-    enableClashFields: true,
+    enableClashFields: false,
     enableBuiltinEnhanced: true,
     proxyLayoutColumn: 6,
     defaultLatencyTest: "",
@@ -34,7 +34,7 @@ export const MiscViewer = forwardRef<DialogRef>((props, ref) => {
       setValues({
         appLogLevel: verge?.app_log_level ?? "info",
         autoCloseConnection: verge?.auto_close_connection ?? true,
-        enableClashFields: verge?.enable_clash_fields ?? true,
+        enableClashFields: verge?.enable_clash_fields ?? false,
         enableBuiltinEnhanced: verge?.enable_builtin_enhanced ?? true,
         proxyLayoutColumn: verge?.proxy_layout_column || 6,
         defaultLatencyTest: verge?.default_latency_test || "",
