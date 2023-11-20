@@ -93,7 +93,7 @@ function clashS3() {
 function clashMeta() {
   const name = META_MAP[`${platform}-${arch}`];
   const isWin = platform === "win32";
-  const urlExt = isWin ? "zip" : "tgz";
+  const urlExt = isWin ? "zip" : "gz";
   const downloadURL = `${META_URL_PREFIX}${META_VERSION}/${name}-${META_VERSION}.${urlExt}`;
   const exeFile = `${name}${isWin ? ".exe" : ""}`;
   const zipFile = `${name}-${META_VERSION}.${urlExt}`;
